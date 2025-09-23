@@ -34,8 +34,6 @@ APP_MODE = os.getenv('APP_MODE', 'DEBUG')
 if APP_MODE == 'RELEASE':
     pass
 else:
-    # Assuming ffmpeg is located at a different path during debugging
-    ffmpeg_path = 'ffmpeg' # not used, ffmpeg in bin app/bin directory
     load_dotenv()
 
 # Azure Blob Storage setup (replace with your credentials)
