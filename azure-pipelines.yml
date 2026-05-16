@@ -22,7 +22,7 @@ steps:
   displayName: 'Fetch from GitHub'
 
 - script: |
-    git remote add azure https://$(AZURE_DEVOPS_PAT)@dev.azure.com/kingguy/jwmediaconverter/_git/jwmediaconverter
+    git remote add azure https://$(AZURE_DEVOPS_PAT)@dev.azure.com/guymicciche/jwmediaconverter/_git/jwmediaconverter
     git push azure main --force
   displayName: 'Push to Azure DevOps'
   env:
